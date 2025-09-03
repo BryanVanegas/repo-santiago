@@ -17,6 +17,14 @@ public class Persona {
         this.cedula = cedula;
         this.apellido = apellido;
     }
+    
+    public boolean verificarCoincidencia(int cedula) {
+        if (cedula == this.cedula) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public int getCedula() {
         return cedula;
