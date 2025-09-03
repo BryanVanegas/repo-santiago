@@ -10,28 +10,28 @@ package com.pracitcaparcial.practica.santiago;
  */
 public class Persona {
     
-    private int id;
-    private String nombre;
+    private int cedula;
+    private String apellido;
 
-    public Persona(int id, String nombre) {
-        this.id = id;
-        this.nombre = nombre;
+    public Persona(int cedula, String apellido) {
+        this.cedula = cedula;
+        this.apellido = apellido;
     }
 
-    public int getId() {
-        return id;
+    public int getCedula() {
+        return cedula;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
     
     
