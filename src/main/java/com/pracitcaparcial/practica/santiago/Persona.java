@@ -9,39 +9,38 @@ package com.pracitcaparcial.practica.santiago;
  * @author BryanVanegas
  */
 public class Persona {
-    
-    private int cedula;
-    private String apellido;
 
-    public Persona(int cedula, String apellido) {
-        this.cedula = cedula;
-        this.apellido = apellido;
-    }
-    
-    public boolean verificarCoincidencia(int cedula) {
-        if (cedula == this.cedula) {
-            return true;
-        } else {
-            return false;
-        }
+    private int id;
+    private String nombre;
+    private int edad;
+
+    public Persona(int id, String nombre, int edad) {
+        this.id = id;
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-    public int getCedula() {
-        return cedula;
+    public int getId() {
+        return id;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-    
-    
-    
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }
